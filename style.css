@@ -138,10 +138,22 @@ main {
   line-height: 1.6rem;
   color: #757575;
 }
+.main-tables__slider {
+  display: flex;
+  gap: 1.5rem;
+  /* height: 31.6rem; */
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.main-tables-container {
+  min-width: 21rem;
+  margin: 0 auto;
+}
 .main-currency-table,
 .main-comision-table {
   justify-content: left;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   font-family: "Inter";
   color: var(--grey);
@@ -225,6 +237,7 @@ main {
 }
 .currency-table__date p,
 .comision-table__date p {
+  scroll-snap-align: center;
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: var(--warm-black);
